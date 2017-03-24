@@ -78,7 +78,7 @@ DOTD := $(patsubst %, $(DEPDIR)/%.d, $(ITEMS))
 
 INCLUDES := $(patsubst %, -I%, $(INCDIRS)) $(patsubst %, -I%, $(PINC))
 
-MAKE := $(MAKE) --no-print-directory -j
+MAKE := $(MAKE) --no-print-directory
 
 .PRECIOUS: $(DOTD) .items auteur
 .SUFFIXES:
